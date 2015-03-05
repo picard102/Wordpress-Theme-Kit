@@ -1,0 +1,29 @@
+body {
+  @include transition (all .2s ease-in-out);
+  background-color: $white;
+  color: $text;
+  font-family: $sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.wrapper {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 0 10px;
+} 
+
+.sprite_hide {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  @include linkcolor($link, darken);
+  text-decoration: none;
+}

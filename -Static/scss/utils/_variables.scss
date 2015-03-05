@@ -1,0 +1,39 @@
+// Colours
+// -------------------------
+
+$light_blue: #00b8e0; 
+$dark_blue: #215e9c;
+
+$white: #fff;
+
+$lightest_grey: #f8f8f8;
+$light_grey: #f1f1f1;
+$grey: #e3e3e3;
+$dark_grey: #bebebe;
+$darkest_grey: #62686d;
+
+$black: #3c4146;
+
+
+$link: $light_blue;
+$text: $darkest_grey;
+$strong: darken($text, 10%);
+
+$brand: $light_blue;
+
+
+// Type
+// -------------------------
+
+
+
+$serif: 'Libre Baskerville', serif;
+$sans-serif: helvetica;
+
+$light: 300;
+$book: 400;
+$medium: 500; 
+$semi: 600;
+$heavy: 700;
+$extra: 800;
+$em-base: 16px;

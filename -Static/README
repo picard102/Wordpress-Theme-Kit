@@ -1,0 +1,139 @@
+//////////////////////////////
+//                          //
+//    Automation Station    //
+//                          //
+//////////////////////////////
+
+
+//
+//    What We Do
+//
+
+Grunt allows us to work without pausing to do tedious tasks that the computer can easily do for us. 
+
+This project contains the following automations.
+
+grunt-scss-lint
+  Lints SCSS files. Standard is set in scss-lint.yml.
+  
+grunt-sass
+  Compile SCSS files into CSS
+
+grunt-svgmin
+  Cleans up SVG files
+
+grunt-contrib-imagemin
+  Optimizes raster graphics
+
+grunt-svgstore
+  Build an SVG sprite out of SVG's 
+
+grunt-contrib-jshint
+  Lints main.js
+
+grunt-contrib-uglify
+  Minimize and uglify JS files
+
+ grunt-phplint
+   Lints PHP 
+
+
+//
+//  Be Gentle, it's my first time.
+//
+
+
+If you are running these automations for the first time, you will need the following.
+
+NODE - http://nodejs.org/download/
+
+GRUNT - http://gruntjs.com/getting-started
+  $ npm install -g grunt-cli
+  
+You only need to install these once. They will work across all of our projects.
+
+Once you have Node and Grunt CLI set up:
+
+1. Open Terminal
+
+2. Change Path to the directory this file is in.
+    $ cd path/to/this/example/only/
+
+3. Run the package manager to install all the dependancies. 
+    $ npm install
+    
+    
+
+//
+//  Run this town 
+//
+
+1. Open Terminal
+
+2. Change Path to the directory this file is in.
+    $ cd path/to/this/example/only/
+    
+3. To run the automation once for all files.
+    $ grunt
+
+4. To run continuously and watch files for changes.
+    $ grunt dev
+    
+    Refresh the website to allow the auto reloader to run on each change.
+    
+    
+
+//////////////////////////////
+//                          //
+//        New website       //
+//                          //
+//////////////////////////////
+
+
+//
+//    Set us up the site!
+//
+
+
+
+1. Change project name in package.json
+
+2. Change Theme name in _normalize.scss
+
+3. Set Colour Variables
+
+
+
+
+
+//////////////////////////////
+//                          //
+//      Best Practices      //
+//                          //
+//////////////////////////////
+
+
+
+
+/// SCSS Structure
+
+
+You'll mostly be working within /Components and /Layout.
+
+Componants will be blocks of elements as individual files.
+Layout will be collections of elements, usualy global such as the header and footer.
+
+In _base.scss we set up some global styles, but also build out our extends in here. 
+
+
+
+/// PHP Structure
+
+Simmilar to SCSS, you'll be breaking out groups of elements into new objects, and including them into the page layouts. 
+
+
+
+
+
+
+
