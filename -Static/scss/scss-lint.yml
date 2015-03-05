@@ -65,7 +65,7 @@ linters:
     width: 2
 
   ColorVariable:
-    enabled: false
+    enabled: true
 
   ImportantRule:
     enabled: false
