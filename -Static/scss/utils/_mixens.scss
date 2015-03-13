@@ -28,6 +28,36 @@
    
 }  
 
+
+
+
+//   
+//List Reset
+//
+
+@mixin listreset { 
+  padding: 0;
+  margin: 0;
+  list-style: none outside;
+
+  //li { padding: 0;}
+}
+
+
+//
+//Border Test
+//
+
+@mixin test {
+  $rand: random(365); 
+  border: 1px solid;
+  border-color: hsla($rand, 90, 50, 1);
+  background-color: hsla($rand, 90, 50, .05);
+
+}
+
+
+
 //
 //Grid Precursor
 //
@@ -35,6 +65,7 @@
 @mixin justifyed {
   vertical-align: top;
   text-align: justify;
+  font-size: 0;
 
   &::after { 
     content: ''; 
@@ -68,7 +99,7 @@
       }  
 
       &:visited { 
-        color: darken($value, 25%); 
+        color: darken($value, 5%); 
       }  
 
     }
@@ -84,7 +115,7 @@
       } 
 
       &:visited { 
-        color: lighten($value, 25%); 
+        color: lighten($value, 5%); 
       }    
 
     }
