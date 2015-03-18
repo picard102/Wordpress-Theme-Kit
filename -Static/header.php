@@ -1,4 +1,4 @@
-<div id="sprite_hide">
+<div class="sprite_hide">
 	<?php include("img/sprite.svg"); ?>
 </div>
 
