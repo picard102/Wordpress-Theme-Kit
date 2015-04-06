@@ -56,7 +56,7 @@ $border: lighten($grey, 30%);
     
     &:before,
     &:after {
-      background-color: $dkgrey;
+      background-color: $text;
       content: '';
       display: inline-block;
       height: 1px;
@@ -146,7 +146,7 @@ $border: lighten($grey, 30%);
   }
 
   pre { 
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     background: lighten($border, 24%); 
     padding: 1em 2em; 
     margin-bottom: 24px;
@@ -249,7 +249,7 @@ $border: lighten($grey, 30%);
 
     cite, 
     small {
-      color: $dkgrey;
+      color: $text;
       font-size: em(10);
       display: block;
       margin-top: .5em;
