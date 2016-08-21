@@ -1,0 +1,164 @@
+//
+//Center Alignment
+//
+
+@mixin alignment($pos:relative, $direction:vertical) {
+
+  @if $direction == vertical {
+    position: $pos;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  @if $direction == horizontal {
+    position: $pos;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+  @if $direction == center{
+    position: $pos;
+    left: 50%; 
+    top: 50%;
+    @include transform(translateY(-50%) translateX(-50%));
+  }
+  @if $direction == reset{
+    position: $pos;
+    left: auto; top: auto;
+    @include transform(translateY(auto) translateX(auto));
+  }
+   
+}  
+
+
+
+
+//   
+//List Reset
+//
+
+@mixin listreset { 
+  padding: 0;
+  margin: 0;
+  list-style: none outside;
+
+  //li { padding: 0;}
+}
+
+
+//
+//Border Test
+//
+
+@mixin test {
+  $rand: random(365); 
+  border: 1px solid;
+  border-color: hsla($rand, 90, 50, 1);
+  background-color: hsla($rand, 90, 50, .05);
+
+}
+
+
+
+//
+//Grid Precursor
+//
+
+@mixin justifyed {
+  //@include test;
+  text-align: justify;
+  line-height: 0;
+  //font-size: 0.1px;
+
+  &::after { 
+    //@include test;
+    content: ''; 
+    display: inline-block; 
+    width: 100%; 
+    height: 0; 
+    font-size: 0; 
+    line-height: 0; 
+    letter-spacing: 0; 
+  } 
+
+}
+
+
+//
+//Link Color Mixin
+//
+
+@mixin linkcolor($value, $direction: darken, $hover: false) {
+  @include transition (all .2s ease-in-out);
+  @if $hover == false {
+    @if $direction == darken {
+      color: $value;
+
+      &:hover { 
+        color: darken($value, 20%); 
+      }
+
+      &:active { 
+        color: darken($value, 25%); 
+      }  
+
+
+    }
+    @if $direction == lighten {
+      color: $value;
+      
+      &:hover { 
+        color: lighten($value, 20%); 
+      }
+      
+      &:active { 
+        color: lighten($value, 25%); 
+      } 
+
+
+    }
+
+  } @else {
+    color: $value;
+
+    &:hover { 
+      color: $hover; 
+    }
+
+    &:active { 
+      color: darken($hover, 25%); 
+    }  
+
+  }
+
+}
+
+//
+//Placeholder Text Mixin
+//
+
+@mixin placecolor($value) {
+  $placeholders: ':-webkit-input' ':-moz' '-moz' '-ms-input';
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      color: $value;     
+      opacity: 1; 
+      height: inherit; 
+      vertical-align: middle; 
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@mixin fontsize($size) {
+  font-size: map-get($ms, $size);
+}
+
+
+
+

@@ -1,0 +1,49 @@
+// Colours
+
+$white: #fffefa;
+$black: #1e2225;
+
+$link: $black;
+$text: $black;
+$strong: tint($text, 80%);
+
+$brand: $black;
+
+$ms: (
+  16: 2206.258em,
+  15: 1363.571em,
+  14: 842.751em,
+  13: 520.86em,
+  12: 321.916em,
+  11: 198.959em,
+  10: 122.966em,
+  9: 75.999em,
+  8: 46.971em,
+  7: 29.03em,
+  6: 17.942em,
+  5: 11.089em,
+  4: 6.854em,
+  3: 4.236em,
+  2: 2.618em,
+  1: 1.618em,
+  0: 1em,
+  -1: .618em,
+  -2: .382em,
+  -3: .236em,
+  -4: .146em,
+  -5: .09em,
+  -6: .056em
+);
+
+// Type
+$serif: 'Libre Baskerville', serif;
+$sans-serif: helvetica;
+
+$thin: 100;
+$light: 300;
+$book: 400;
+$medium: 500; 
+$semi: 600;
+$heavy: 700;
+$extra: 800;
+$em-base: 16px;
