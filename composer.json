@@ -18,7 +18,7 @@
     "wordpress-install-dir": "wp",
     "installer-types": ["library"],
     "installer-paths": {
-      "src/includes/{$name}/" : ["tgmpa/tgm-plugin-activation","webdevstudios/cmb2"]
+      "src/includes/vendor/{$name}/" : ["tgmpa/tgm-plugin-activation","webdevstudios/cmb2"]
     }
   }
 }
