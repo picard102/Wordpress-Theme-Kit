@@ -1,6 +1,8 @@
 local-config.php
 /wp
 /vendor
+/node_modules
+/src/includes/vendor
 composer.lock
 .DS_Store
 wp-config.php
