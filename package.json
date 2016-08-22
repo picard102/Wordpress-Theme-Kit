@@ -1,0 +1,48 @@
+{
+  "name": "PROJECT-NAME",
+  "version": "0.8.0",
+  "devDependencies": {
+    "grunt-banner": "^0.6.0",
+    "grunt-bump": "^0.7.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-newer": "^1.1.2",
+    "grunt-notify": "^0.4.3",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-phplint": "0.0.8",
+    "grunt-sass": "^1.1.0",
+    "grunt-scss-lint": "^0.3.8",
+    "grunt-svgmin": "^3.1.2",
+    "grunt-svgstore": "^1.0.0",
+    "grunt-text-replace": "^0.4.0",
+    "grunt-timer": "^0.6.0",
+    "load-grunt-tasks": "^3.4.0",
+    "node-bourbon": "^4.2.3"
+  },
+  "props": {
+    "theme_folder": "",
+    "theme_local": "",
+    "theme_url": "",
+    "theme_version": "",
+    "theme_name": "Project Name",
+    "author_name": "John Leschinski",
+    "author_email": "john@leschinskidesign.com",
+    "author_url": "http://www.leschinskidesign.com",
+    "git_link": "https://github.com/picard102/"
+  },
+  "path": {
+    "scss": "assets/scss",
+    "scssnew": "assets/scss",
+    "img": "assets/img",
+    "svg": "assets/svg",
+    "js": "assets/js", 
+    "srcpath": "src/",
+    "buildpath": "wp-content/themes/"
+  }
+}
