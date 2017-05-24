@@ -41,7 +41,7 @@
     "scssnew": "assets/scss",
     "img": "assets/img",
     "svg": "assets/svg",
-    "js": "assets/js", 
+    "js": "assets/js",
     "srcpath": "src/",
     "buildpath": "wp-content/themes/"
   }

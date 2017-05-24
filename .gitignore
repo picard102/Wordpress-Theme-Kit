@@ -10,4 +10,4 @@ wp-config.php
 .bundle
 *.scssc
 .htaccess
-*.zip 
+*.zip

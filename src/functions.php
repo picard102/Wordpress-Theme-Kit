@@ -18,8 +18,8 @@
  * @package  @theme_folder@
  * @author   @author_name@  <@author_email@>
  * @version  Release: @package_version@
- * @link     @git_link@ 
- */ 
+ * @link     @git_link@
+ */
 
   $GLOBALS['template_dir_uri'] = get_template_directory_uri();
   $GLOBALS['current_url'] = 'http://'.$_SERVER['SERVER_NAME'];

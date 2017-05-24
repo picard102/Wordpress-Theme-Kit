@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-Fork/Checkout this project from Github and rename the values to make the projects details in 'composer.json' and 'package.json'. 
+Fork/Checkout this project from Github and rename the values to make the projects details in 'composer.json' and 'package.json'.
 
 Ensure you're not working on the same git origion url as this project.
 
@@ -41,14 +41,14 @@ Install NPM/Grunt dependancies
 $ npm install
 ```
 
-To set up the Wordpress install, copy and edit the 'local-config-sample.php' and 'wp-config-edit-and-rename.php' with the correct database information, saving them as 'local-config.php' and 'wp-config.php'. These files will not be tracked to keep your information private. 
+To set up the Wordpress install, copy and edit the 'local-config-sample.php' and 'wp-config-edit-and-rename.php' with the correct database information, saving them as 'local-config.php' and 'wp-config.php'. These files will not be tracked to keep your information private.
 
 Delete this Readme.
 
 
-### Building 
+### Building
 
-From your projects directory, in Terminal, you can run a build of the project with the command below. This will process all the files from your 'scr/' directory, and bump up the version as a pre-patch. 
+From your projects directory, in Terminal, you can run a build of the project with the command below. This will process all the files from your 'scr/' directory, and bump up the version as a pre-patch.
 
 ```
 $ grunt dev

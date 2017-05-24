@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Output general scripts for site wide usage
  *
@@ -8,7 +8,7 @@
  * @package  @theme_folder@
  * @author   @author_name@  <@author_email@>
  * @version  Release: @package_version@
- * @link     @git_link@ 
+ * @link     @git_link@
  */
 
  function general_scripts() {
@@ -31,7 +31,7 @@
 
   /**
    * Load LiveReload if on Localhost
-   */  
+   */
     if (false !== strpos($GLOBALS['current_url'],'localhost') ) {
       wp_register_script('livereload', $GLOBALS['current_url'].':25710/livereload.js?snipver=1', null, '@hash@', true);
       wp_enqueue_script('livereload');

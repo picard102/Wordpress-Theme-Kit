@@ -42,7 +42,7 @@ module.exports = function(grunt) {
           colorizeOutput: true,
           maxBuffer: '30000000000'
         },
-      
+
     },
 
   /*==========  grunt banner - Add theme info to css  ==========*/
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
   /*=============================================
   =            JS Functions                     =
   =============================================*/
-  
+
   /*==========  JSHint - Check JS  ==========*/
     jshint: {
       options: {
@@ -139,8 +139,8 @@ module.exports = function(grunt) {
     svgmin: {
       options: {
         plugins: [
-        { removeViewBox: false }, 
-        { removeUselessStrokeAndFill: true }, 
+        { removeViewBox: false },
+        { removeUselessStrokeAndFill: true },
         { cleanupIDs: true }
         ]
       },
@@ -165,21 +165,21 @@ module.exports = function(grunt) {
 
   /*=============================================
   =            Image                            =
-  =============================================*/   
+  =============================================*/
 
   /*==========  ImageMin - compress raster files  ==========*/
-    imagemin: { 
-      dynamic: { 
+    imagemin: {
+      dynamic: {
         options: { optimizationLevel: 4},
         files: [{
           expand: true,
-          cwd: '<%= pkg.path.srcpath %><%= pkg.path.img %>', 
-          src: ['*.{png,jpg,gif}'], 
-          dest: '<%= pkg.path.buildpath %><%= pkg.name %>/<%= pkg.path.img%>' 
+          cwd: '<%= pkg.path.srcpath %><%= pkg.path.img %>',
+          src: ['*.{png,jpg,gif}'],
+          dest: '<%= pkg.path.buildpath %><%= pkg.name %>/<%= pkg.path.img%>'
         }]
       }
     },
-  
+
   /*==========  ImageOptim - compress raster files again  ==========*/
     imageoptim: {
       myTask: {
@@ -245,21 +245,21 @@ module.exports = function(grunt) {
   /*==========  Copy - Copy files to build deploy folder  ==========*/
     copy: {
       build: {
-        expand: true, 
-        cwd: '<%= pkg.path.srcpath %>', 
-        src: ['**', '!**/img/**', '!**/svg/**', '!**/scss/**', '!**/js/**'], 
+        expand: true,
+        cwd: '<%= pkg.path.srcpath %>',
+        src: ['**', '!**/img/**', '!**/svg/**', '!**/scss/**', '!**/js/**'],
         dest: '<%= pkg.path.buildpath %><%= pkg.name %>/'
       },
       img: {
-        expand: true, 
-        cwd: 'src/assets/img/', 
-        src: ['*.{png,jpg,gif}'], 
+        expand: true,
+        cwd: 'src/assets/img/',
+        src: ['*.{png,jpg,gif}'],
         dest: '<%= pkg.path.buildpath %><%= pkg.name %>/<%= pkg.path.img%>/'
       },
       deploy: {
-        expand: true, 
-        cwd: '<%= pkg.path.srcpath %>', 
-        src: ['**', '!**/img/**', '!**/svg/**', '!**/scss/**', '!**/js/**'], 
+        expand: true,
+        cwd: '<%= pkg.path.srcpath %>',
+        src: ['**', '!**/img/**', '!**/svg/**', '!**/scss/**', '!**/js/**'],
         dest: 'deploy/'
       }
     },
@@ -346,9 +346,9 @@ module.exports = function(grunt) {
       options: {
         livereload: 25710,
       },
-      
-      grunt: { 
-        files: ['Gruntfile.js'] 
+
+      grunt: {
+        files: ['Gruntfile.js']
       },
       scripts: {
         files: ['<%= pkg.path.srcpath %><%= pkg.path.js %>/*.js'],
@@ -378,7 +378,7 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
         }
-      }, 
+      },
     }
   });
 
@@ -423,7 +423,7 @@ grunt.event.on('watch', function(action, filepath) {
   grunt.registerTask('script', ['jshint:dev', 'concat', 'uglify:dev']);
   grunt.registerTask('svg', ['svgmin', 'svgstore']);
   grunt.registerTask('img', ['imagemin', 'imageoptim']);
-  
+
   grunt.registerTask('devwatch', ['watch']);
 
   grunt.registerTask('dev', ['bump-only:prepatch','clean:build','scsslint:dev','sass:dev','usebanner:dev','jshint:dev','concat','uglify:dev','svgmin','svgstore','copy:img','phplint:all','phpcs:all','copy:build','replace']);
