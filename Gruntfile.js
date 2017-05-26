@@ -195,7 +195,7 @@ module.exports = function(grunt) {
     phplint: {
       newerFiles: ['<%= phplintCurrentFile %>'],
       all: {
-        src: [  '<%= pkg.path.srcpath %>**/*.php' ]
+        src: [  '<%= pkg.path.srcpath %>**/*.php', '!<%= pkg.path.srcpath %>/includes/vendor/*.php' ]
       },
 
     },
@@ -204,7 +204,7 @@ module.exports = function(grunt) {
     phpcs: {
       newerFiles: ['<%= phplintCurrentFile %>'],
       all: {
-        src: [  '<%= pkg.path.srcpath %>/**/*.php']
+        src: [  '<%= pkg.path.srcpath %>/**/*.php', '!<%= pkg.path.srcpath %>/includes/vendor/*.php']
       },
       options: {
         standard: 'Wordpress',

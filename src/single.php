@@ -12,6 +12,7 @@
  * @version  Release: @package_version@
  * @link     @git_link@
  */
+
 ?>
 <?php require'templates/header.php'; ?>
 
