@@ -13,7 +13,12 @@
  * @link     @git_link@
  */
 
-?>
-<?php require'templates/header.php'; ?>
+/**
+ * Header Template
+ */
+require'templates/header.php';
 
-<?php require'templates/footer.php'; ?>
+/**
+ * Footer Template
+ */
+require'templates/footer.php';

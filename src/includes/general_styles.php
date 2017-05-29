@@ -15,8 +15,7 @@
  * General Theme Styles
  */
 function general_styles() {
-  wp_enqueue_style( 'pcto_reset', $GLOBALS['template_dir_uri'].'/style.css', false, '@hash@', 'screen' );
+  wp_enqueue_style( 'pcto_reset', $GLOBALS['template_dir_uri'] . '/style.css', false, '@hash@', 'screen' );
 }
 add_action( 'wp_enqueue_scripts', 'general_styles' );
 
-?>

@@ -23,12 +23,10 @@
 
   $GLOBALS['template_dir_uri'] = get_template_directory_uri();
 if ( isset( $_SERVER['SERVER_NAME'] ) ) {
-  $GLOBALS['current_url'] = esc_url_raw( wp_unslash( 'http://'.$_SERVER['SERVER_NAME'] ) );
+  $GLOBALS['current_url'] = esc_url_raw( wp_unslash( 'http://' . $_SERVER['SERVER_NAME'] ) );
 }
 
   require'includes/general_scripts.php';
   require'includes/general_styles.php';
   require'includes/disable_emojis.php';
   require'includes/theme_favicon.php';
-
-?>

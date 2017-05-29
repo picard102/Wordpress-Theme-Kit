@@ -43,9 +43,9 @@ function theme_scripts() {
    * Else require the footer moved to the footer.
    */
   if ( ! is_admin() ) {
-    wp_register_script( 'built', $GLOBALS['template_dir_uri'].'/built.js', array( 'jquery' ), '@hash@', true );
+    wp_register_script( 'built', $GLOBALS['template_dir_uri'] . '/built.js', array( 'jquery' ), '@hash@', true );
   } else {
-    wp_register_script( 'built', $GLOBALS['template_dir_uri'].'/admin.js', array( 'jquery' ), '@hash@', true );
+    wp_register_script( 'built', $GLOBALS['template_dir_uri'] . '/admin.js', array( 'jquery' ), '@hash@', true );
   }
   wp_enqueue_script( 'built' );
 
@@ -53,7 +53,7 @@ function theme_scripts() {
    * Load LiveReload if on Localhost
    */
   if ( false !== strpos( $GLOBALS['current_url'],'stratford.dev' ) ) {
-    wp_register_script( 'livereload', $GLOBALS['current_url'].':25710/livereload.js?snipver=1', null, '@hash@', true );
+    wp_register_script( 'livereload', $GLOBALS['current_url'] . ':25710/livereload.js?snipver=1', null, '@hash@', true );
     wp_enqueue_script( 'livereload' );
   };
 
@@ -82,9 +82,7 @@ add_action( 'wp_enqueue_scripts', 'wpa_scripts' );
  */
 function theme_ajaxurl() {
   echo '<script type="text/javascript">
-    var ajaxurl = "'.esc_html( admin_url( 'admin-ajax.php' ) ).'";
+    var ajaxurl = "' . esc_html( admin_url( 'admin-ajax.php' ) ) . '";
   </script>';
 }
 add_action( 'wp_head', 'theme_ajaxurl' );
-
-?>
